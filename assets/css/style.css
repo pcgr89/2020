@@ -1,0 +1,531 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  line-height: 1.25rem;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 1rem;
+}
+
+/* ========== COLUMNS ========== */
+.col-12 {
+  grid-column: span 12;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+  .col-sm-12 {
+    grid-column: span 12;
+  }
+
+  .col-sm-11 {
+    grid-column: span 11;
+  }
+
+  .col-sm-10 {
+    grid-column: span 10;
+  }
+
+  .col-sm-9 {
+    grid-column: span 9;
+  }
+
+  .col-sm-8 {
+    grid-column: span 8;
+  }
+
+  .col-sm-7 {
+    grid-column: span 7;
+  }
+
+  .col-sm-6 {
+    grid-column: span 6;
+  }
+
+  .col-sm-5 {
+    grid-column: span 5;
+  }
+
+  .col-sm-4 {
+    grid-column: span 4;
+  }
+
+  .col-sm-3 {
+    grid-column: span 3;
+  }
+
+  .col-sm-2 {
+    grid-column: span 2;
+  }
+
+  .col-sm-1 {
+    grid-column: span 1;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-12 {
+    grid-column: span 12;
+  }
+
+  .col-md-11 {
+    grid-column: span 11;
+  }
+
+  .col-md-10 {
+    grid-column: span 10;
+  }
+
+  .col-md-9 {
+    grid-column: span 9;
+  }
+
+  .col-md-8 {
+    grid-column: span 8;
+  }
+
+  .col-md-7 {
+    grid-column: span 7;
+  }
+
+  .col-md-6 {
+    grid-column: span 6;
+  }
+
+  .col-md-5 {
+    grid-column: span 5;
+  }
+
+  .col-md-4 {
+    grid-column: span 4;
+  }
+
+  .col-md-3 {
+    grid-column: span 3;
+  }
+
+  .col-md-2 {
+    grid-column: span 2;
+  }
+
+  .col-md-1 {
+    grid-column: span 1;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-12 {
+    grid-column: span 12;
+  }
+
+  .col-md-11 {
+    grid-column: span 11;
+  }
+
+  .col-md-10 {
+    grid-column: span 10;
+  }
+
+  .col-md-9 {
+    grid-column: span 9;
+  }
+
+  .col-md-8 {
+    grid-column: span 8;
+  }
+
+  .col-md-7 {
+    grid-column: span 7;
+  }
+
+  .col-md-6 {
+    grid-column: span 6;
+  }
+
+  .col-md-5 {
+    grid-column: span 5;
+  }
+
+  .col-md-4 {
+    grid-column: span 4;
+  }
+
+  .col-md-3 {
+    grid-column: span 3;
+  }
+
+  .col-md-2 {
+    grid-column: span 2;
+  }
+
+  .col-md-1 {
+    grid-column: span 1;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-12 {
+    grid-column: span 12;
+  }
+
+  .col-lg-11 {
+    grid-column: span 11;
+  }
+
+  .col-lg-10 {
+    grid-column: span 10;
+  }
+
+  .col-lg-9 {
+    grid-column: span 9;
+  }
+
+  .col-lg-8 {
+    grid-column: span 8;
+  }
+
+  .col-lg-7 {
+    grid-column: span 7;
+  }
+
+  .col-lg-6 {
+    grid-column: span 6;
+  }
+
+  .col-lg-5 {
+    grid-column: span 5;
+  }
+
+  .col-lg-4 {
+    grid-column: span 4;
+  }
+
+  .col-lg-3 {
+    grid-column: span 3;
+  }
+
+  .col-lg-2 {
+    grid-column: span 2;
+  }
+
+  .col-lg-1 {
+    grid-column: span 1;
+  }
+}
+.header {
+  height: 20rem;
+  background: url("../img/desarrolloweb2021t.svg");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main {
+  padding: 1rem 0rem;
+}
+.main__posts, .main__info {
+  border: 1px solid #000000;
+  padding: 1rem 1rem 0 1rem;
+}
+.main__card {
+  border: 1px dotted #000000;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.main__card img {
+  width: 100%;
+}
+.main__cardtitle {
+  padding: 0.5rem 0rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.main__cardinstructor {
+  font-weight: 700;
+  padding: 0.5rem 0rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.main__postmenu {
+  display: flex;
+  flex-direction: row;
+}
+.main__postmenu div {
+  margin: 0rem 0.5rem;
+  font-size: 12px;
+}
+.main__postmenu div:first-child {
+  margin: 0 0.5rem 0 0;
+}
+.main__postmenu div:last-child {
+  margin: 0 0 0 0.5rem;
+}
+.main__info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.main__infoimg {
+  margin: 0 auto;
+  height: 10rem;
+  width: 10rem;
+}
+.main__infoimg img {
+  border: 1px solid #060606;
+  border-radius: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+.main__infotitle {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 1rem 0;
+}
+.main__infocontact {
+  flex-direction: row;
+  font-size: 20px;
+}
+.main__infocontact i {
+  padding: 0.25rem;
+}
+.main__infodesc p {
+  text-align: left;
+  margin-top: 1rem;
+}
+.main__infosubtitle {
+  margin-top: 1rem;
+  background-color: #060606;
+  color: #ffffff;
+  padding: 0.5rem;
+  font-size: 16px;
+  font-weight: 700;
+}
+.main__infolist {
+  text-align: left;
+  list-style-type: disc;
+}
+.main__infoitem {
+  list-style-type: circle;
+  padding: 0px;
+  margin: 0.25rem 1rem;
+}
+.main__infophone {
+  margin-top: 2rem;
+}
+.main__infophone img {
+  width: 10rem;
+  height: auto;
+}
+
+.navigation {
+  background-color: #000000;
+}
+.navigation__logo {
+  padding: 0.75rem;
+}
+.navigation__logo img {
+  height: 40px;
+}
+.navigation__menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+}
+.navigation__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 1rem;
+  transition: ease 0.25s;
+}
+.navigation__item:hover {
+  background-color: #2e1503;
+  transition: ease 0.25s;
+}
+.navigation__item a {
+  color: #ffffff;
+}
+
+.footer {
+  color: #ffffff;
+  background-color: #000000;
+  padding: 1rem;
+}
+.footer__copy {
+  align-self: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+.footer__form {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer__links {
+  padding: 0rem 2rem;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-weight: 400;
+}
+.footer__item {
+  padding: 0 1rem;
+  list-style: none;
+}
+.footer__item a {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: aqua;
+  }
+
+  .footer__copy {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .footer__form {
+    justify-content: center;
+  }
+}
+.button {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  background-color: #ffa500;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  transition: ease 0.5s;
+}
+.button:hover {
+  background-color: #ffffff;
+  transition: ease 0.5s;
+}
+
+input {
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  padding: 0.25rem 0.5rem;
+}
+input::placeholder {
+  color: #060606;
+}
+
+/*# sourceMappingURL=style.css.map */

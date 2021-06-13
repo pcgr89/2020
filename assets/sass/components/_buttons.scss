@@ -1,0 +1,13 @@
+.button {
+    border: none;
+    padding: 0.25rem 0.5rem;
+    background-color: $orange;
+    color: $black;
+    font-family: $poppins;
+    font-size: $small;
+    transition: ease 0.5s;
+    &:hover {
+        background-color: $white;
+        transition: ease 0.5s;
+    }
+}

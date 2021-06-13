@@ -1,0 +1,9 @@
+input {
+    background-color: $white;
+    font-family: $poppins;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    &::placeholder {
+        color: $sable;
+    }
+}

@@ -1,0 +1,116 @@
+.main {
+    padding: 1rem 0rem;
+    &__posts, &__info {
+        border: 1px solid $black;
+        padding: 1rem 1rem 0 1rem;
+    }
+
+    &__card {
+        border: 1px dotted $black;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__cardtitle {
+        padding: 0.5rem 0rem;
+        font-family: $poppins;
+        font-weight: $fw-bold;
+        font-size: $medium;
+    }
+
+    &__cardinstructor {
+        font-weight: $fw-bold;
+        padding: 0.5rem 0rem;
+        font-family: $poppins;
+        font-size: $small;
+    }
+
+    &__postmenu {
+        display: flex;
+        flex-direction: row;
+        div {
+            margin: 0rem 0.5rem;
+            font-size: $x-small;
+            &:first-child {
+                margin: 0 0.5rem 0 0;
+            }
+
+            &:last-child {
+                margin: 0 0 0 0.5rem;
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        text-align: center;
+    }
+
+    &__infoimg {
+        margin: 0 auto;
+        height: 10rem;
+        width: 10rem;
+        img {
+            border: 1px solid $sable;
+            border-radius: 100%;
+            width: 100%;
+            object-fit: cover;
+            background-position: center;
+        }
+    }
+
+    &__infotitle {
+        font-weight: $fw-bold;
+        text-transform: uppercase;
+        font-size: $large;
+        padding: 1rem 0;
+    }
+
+    &__infocontact {
+        flex-direction: row;
+        font-size: $large;
+        i {
+            padding: 0.25rem;
+        }
+    }
+
+    &__infodesc {
+        p {
+            text-align: left;
+            margin-top: 1rem;
+        } 
+    }
+
+    &__infosubtitle {
+        margin-top: 1rem;
+        background-color: $sable;
+        color: $white;
+        padding: 0.5rem;
+        font-size: $medium;
+        font-weight: $fw-bold;
+    }
+
+    &__infolist {
+        text-align: left;
+        list-style-type: disc;
+    }
+
+    &__infoitem {
+        list-style-type: circle;
+        padding: 0px;
+        margin: 0.25rem 1rem;
+    }
+
+    &__infophone {
+        margin-top: 2rem;
+        img {
+            width: 10rem;
+            height: auto;
+        }
+    }
+}

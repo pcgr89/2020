@@ -1,0 +1,55 @@
+.footer {
+    color: $white;
+    background-color: $black;
+    padding: 1rem;
+
+    &__copy {
+        align-self: center;
+        font-size: $x-small;
+        font-weight: $fw-regular;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__links {
+        padding: 0rem 2rem;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        font-size: $x-small;
+        font-weight: $fw-regular;
+    }
+
+    &__item {
+        padding: 0 1rem;
+        list-style: none;
+        a {
+            color: $white;
+        }
+    }
+}
+
+@include tablet_view {
+    body {
+        background-color: aqua;
+    }
+
+    .footer {
+        &__copy {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        &__form {
+            // display: flex;
+            justify-content: center;
+        }
+
+    }
+
+    
+    
+}
