@@ -1,29 +1,20 @@
 .navigation {
-    background-color: $black;
-    &__logo {
-        padding: 0.75rem;
-        img {
-            height: 40px;
-        }
-    }
+    background: $black;
+    transition: ease 0.25s;
+    padding: 0.5rem;
 
-    &__menu {
-        display: flex;
-        justify-content: flex-end;
+    &__label {
+        margin-top: 1rem;
+        color: $white;
     }
-
-    &__list {
-        display: flex;
-        flex-direction: row;
-
-    }
+   
 
     &__item {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-end;
+        align-items: right;
         height: 100%;
-        padding: 1rem;
+        padding: 0.25rem;
         transition: ease 0.25s;
         &:hover {
             background-color: $charcoal;
@@ -34,4 +25,72 @@
             color: $white;
         }
     }
+
+    &__logo {
+        display: block;
+        padding: 0.75rem;
+        img {
+            height: 40px;
+        }
+    }
+
+    &__container {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    &__list {
+        list-style-type: none;
+    }
+}
+
+.collapsible {
+    text-align: right;
+    align-self: center;
+    margin-right: 1rem;
+  
+    label {
+      display: block;
+      font-size: 1.8rem;
+    }
+  }
+
+  #menu {
+    display: none;
+  }
+  
+  input:checked~.navigation__container {
+    max-height: 100%;
+  }
+
+@media only screen and (min-width: 992px) {
+    .navigation {
+        padding: 0;
+        &__logo {
+            align-self: center;
+            padding: 0;
+        }
+
+        &__item {
+            padding: 1rem;
+        }
+        &__container {
+            max-height: 100%;transition: ease 0.25s;
+            overflow: visible;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__list {
+            display: flex;
+            margin: inherit;
+            padding: inherit;
+          }
+          
+    }
+    .collapsible {
+        label {
+          display: none;transition: ease 0.25s;
+        }
+      }
 }

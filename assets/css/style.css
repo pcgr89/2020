@@ -329,7 +329,7 @@ body {
 }
 
 .main {
-  padding: 1rem 0rem;
+  padding: 1rem;
 }
 .main__posts, .main__info {
   border: 1px solid #000000;
@@ -421,36 +421,56 @@ body {
   margin: 0.25rem 1rem;
 }
 .main__infophone {
-  margin-top: 2rem;
-}
-.main__infophone img {
-  width: 10rem;
+  margin: auto;
+  padding: 2rem 0;
+  width: 12rem;
   height: auto;
+}
+.main__svgcode {
+  animation-name: mover;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes mover {
+  0% {
+    transform: translatex(190px);
+  }
+  50% {
+    left: 0;
+    transform: translatex(0px);
+  }
+  100% {
+    transform: translatex(190px);
+  }
+}
+.main__svggear {
+  animation: 4s rotate linear infinite;
+  transform-origin: 79% 79%;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .navigation {
-  background-color: #000000;
+  background: #000000;
+  transition: ease 0.25s;
+  padding: 0.5rem;
 }
-.navigation__logo {
-  padding: 0.75rem;
-}
-.navigation__logo img {
-  height: 40px;
-}
-.navigation__menu {
-  display: flex;
-  justify-content: flex-end;
-}
-.navigation__list {
-  display: flex;
-  flex-direction: row;
+.navigation__label {
+  margin-top: 1rem;
+  color: #ffffff;
 }
 .navigation__item {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: right;
   height: 100%;
-  padding: 1rem;
+  padding: 0.25rem;
   transition: ease 0.25s;
 }
 .navigation__item:hover {
@@ -460,48 +480,131 @@ body {
 .navigation__item a {
   color: #ffffff;
 }
+.navigation__logo {
+  display: block;
+  padding: 0.75rem;
+}
+.navigation__logo img {
+  height: 40px;
+}
+.navigation__container {
+  max-height: 0;
+  overflow: hidden;
+}
+.navigation__list {
+  list-style-type: none;
+}
 
+.collapsible {
+  text-align: right;
+  align-self: center;
+  margin-right: 1rem;
+}
+.collapsible label {
+  display: block;
+  font-size: 1.8rem;
+}
+
+#menu {
+  display: none;
+}
+
+input:checked ~ .navigation__container {
+  max-height: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .navigation {
+    padding: 0;
+  }
+  .navigation__logo {
+    align-self: center;
+    padding: 0;
+  }
+  .navigation__item {
+    padding: 1rem;
+  }
+  .navigation__container {
+    max-height: 100%;
+    transition: ease 0.25s;
+    overflow: visible;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navigation__list {
+    display: flex;
+    margin: inherit;
+    padding: inherit;
+  }
+
+  .collapsible label {
+    display: none;
+    transition: ease 0.25s;
+  }
+}
 .footer {
-  color: #ffffff;
-  background-color: #000000;
-  padding: 1rem;
+  background-color: #060606;
+  padding: 0 1rem;
 }
 .footer__copy {
-  align-self: center;
+  color: #ffffff;
   font-size: 12px;
-  font-weight: 400;
+  align-self: center;
 }
-.footer__form {
-  display: flex;
-  justify-content: flex-end;
+.footer__right2 {
+  text-align: right;
+  align-self: center;
 }
 .footer__links {
-  padding: 0rem 2rem;
-  align-self: center;
   display: flex;
+  justify-content: flex-end;
   flex-direction: row;
-  font-size: 12px;
-  font-weight: 400;
 }
 .footer__item {
-  padding: 0 1rem;
+  padding: 1rem;
   list-style: none;
 }
 .footer__item a {
+  align-self: center;
   color: #ffffff;
+  font-size: 12px;
+}
+.footer__paragraph {
+  text-align: left;
+  padding: 1rem;
+}
+.footer #menuToggle {
+  display: none;
+}
+.footer__menu-icon {
+  display: none;
 }
 
-@media (max-width: 768px) {
-  body {
-    background-color: aqua;
+@media (max-width: 576px) {
+  .footer {
+    padding: 1rem;
   }
-
-  .footer__copy {
+  .footer__links {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer__right2 {
     text-align: center;
-    margin-bottom: 1rem;
+  }
+  .footer__paragraph {
+    text-align: center;
+    padding: 0.5rem;
   }
   .footer__form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+  }
+  .footer__item {
+    padding: 0;
     justify-content: center;
+    display: flex;
   }
 }
 .button {
@@ -518,6 +621,12 @@ body {
   transition: ease 0.5s;
 }
 
+@media (max-width: 576px) {
+  .button {
+    margin-top: 1rem;
+    margin: auto;
+  }
+}
 input {
   background-color: #ffffff;
   font-family: "Poppins", sans-serif;
@@ -526,6 +635,12 @@ input {
 }
 input::placeholder {
   color: #060606;
+}
+
+@media (max-width: 576px) {
+  input {
+    margin: 1rem 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

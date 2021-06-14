@@ -1,55 +1,80 @@
 .footer {
-    color: $white;
-    background-color: $black;
-    padding: 1rem;
+    background-color: $sable;
+    padding: 0 1rem;
 
     &__copy {
-        align-self: center;
+        color: $white;
         font-size: $x-small;
-        font-weight: $fw-regular;
+        // display: flex;
+        align-self: center;
     }
 
-    &__form {
-        display: flex;
-        justify-content: flex-end;
+    &__right2 {
+        text-align: right;
+        align-self: center;
     }
 
     &__links {
-        padding: 0rem 2rem;
-        align-self: center;
         display: flex;
+        justify-content: flex-end;
         flex-direction: row;
-        font-size: $x-small;
-        font-weight: $fw-regular;
+
     }
 
     &__item {
-        padding: 0 1rem;
+        padding: 1rem;
         list-style: none;
         a {
+            align-self: center;
             color: $white;
+            font-size: $x-small;
         }
+    }
+
+    &__paragraph {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    #menuToggle {
+        display: none;
+    }
+    &__menu-icon {
+        display: none;
     }
 }
 
-@include tablet_view {
-    body {
-        background-color: aqua;
-    }
 
+
+@include mobile_view {
     .footer {
-        &__copy {
+        padding: 1rem;
+
+        &__links {
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        &__right2 {
             text-align: center;
-            margin-bottom: 1rem;
+        }
+
+        &__paragraph {
+            text-align: center;
+            padding: 0.5rem;
         }
 
         &__form {
-            // display: flex;
-            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
         }
 
+        &__item {
+            padding: 0;
+            justify-content: center;
+            display: flex;
+        }
     }
-
-    
-    
 }

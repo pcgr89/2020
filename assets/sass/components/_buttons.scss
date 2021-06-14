@@ -11,3 +11,11 @@
         transition: ease 0.5s;
     }
 }
+
+@include mobile_view {
+    .button {
+        margin-top: 1rem;
+        // max-width: 150px;
+        margin: auto;
+    }
+}

@@ -7,3 +7,9 @@ input {
         color: $sable;
     }
 }
+
+@include mobile_view {
+    input {
+        margin: 1rem 0;
+    }
+}
